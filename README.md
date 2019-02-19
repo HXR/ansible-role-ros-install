@@ -37,7 +37,7 @@ The following is a rough todo list for this repo
     - [ ] yaml2rst  
 
 ## License
-BSD / MIT  
+[Dual](https://github.com/sfackler/rust-postgres-macros/issues/19) BSD / MIT  
 
 ## Resources
 This Ansible Role tries to follow [DEP2 - DebOps code standards](https://docs.debops.org/en/master/dep/dep-0002.html)  
