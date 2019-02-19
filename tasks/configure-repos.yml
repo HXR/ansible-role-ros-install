@@ -1,0 +1,14 @@
+---
+- name: Add ROS repository into sources list
+  apt_repository:
+    repo: "deb {{ ros__repository }} {{ ansible_lsb.codename }} main"
+    state: present
+
+- name: Add ROS public key
+  apt_key:
+    keyserver: "{{ ros__keyserver }}"
+    id: "{{ ros__keyid }}"
+
+- name: Update apt cache
+  apt:
+    update_cache: yes

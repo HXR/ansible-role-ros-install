@@ -1,0 +1,7 @@
+---
+- tasks:
+  - block:
+    - include_tasks: configure-repos.yml
+    - include_tasks: install-packages.yml
+    - include_tasks: ros-dep.yml
+    - include_tasks: ros-env.yml

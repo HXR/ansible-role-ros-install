@@ -1,0 +1,23 @@
+---
+# ROS Setup Variables
+# -------------------
+
+# ROS release name. The default is ROS Kinetic
+ros__release: kinetic
+# Default ROS package to install
+ros__package: desktop-full
+# ROS repository URL
+ros__repository: http://packages.ros.org/ros/ubuntu
+# Keyserver containing the ROS Public key
+ros__keyserver: hkp://ha.pool.sks-keyservers.net:80
+# ROS keyid
+ros__keyid: 421C365BD9FF1F717815A3895523BAEEB01FA116
+
+# Additional Packages
+# -------------------
+# Recommended packages to install
+ros__recommended_packages:
+- python-rosinstall
+- python-rosinstall-generator
+- python-wstool
+- build-essential

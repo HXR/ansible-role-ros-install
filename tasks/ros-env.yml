@@ -1,0 +1,9 @@
+---
+- name: Append ROS setup to bashrc
+  copy:
+    dest: /etc/profile.d/ros-{{ ros__release }}.sh
+    mode: 0755
+    content: |
+      #!/bin/sh
+      source /opt/ros/{{ ros__release }}/setup.bash
+

@@ -1,0 +1,12 @@
+---
+- name: Check if rosdep is initialized
+  stat:
+    path: /etc/ros/rosdep/sources.list.d/20-default.list
+  register: rosdep_repository
+
+- name: Initialize rosdep
+  raw: sudo rosdep init
+  when: rosdep_repository.stat.exists == false
+
+- name: Sync the rosdep package files
+  raw: rosdep update
