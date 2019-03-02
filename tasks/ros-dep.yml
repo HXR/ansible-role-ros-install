@@ -6,7 +6,7 @@
 
 - name: Initialize rosdep
   raw: sudo rosdep init
-  when: rosdep_repository.stat.exists == false
+  when: not rosdep_repository.stat.exists
 
 - name: Sync the rosdep package files
-  raw: rosdep update
+  raw: rosdep update # noqa 301

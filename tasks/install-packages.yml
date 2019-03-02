@@ -1,8 +1,5 @@
 ---
 - name: "Install ROS packages"
   apt:
-    name: "{{ item }}"
+    name: ['ros-{{ ros__release }}-{{ ros__package }}"', '{{ ros__recommended_packages }}']
     state: present
-  with_items:
-  - ros-{{ ros__release }}-{{ ros__package }}
-  - "{{ ros__recommended_packages }}"
