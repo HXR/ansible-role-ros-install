@@ -17,7 +17,7 @@ There are some pre-made configuration files for various Ubuntu and Debian distri
   vars:
     - ros__package: ros-base
   roles:
-    - mynameiscosmo.ros-install
+    - hxr.ros-install
 ```
 
 ## TODO
