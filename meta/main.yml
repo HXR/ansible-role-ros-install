@@ -2,6 +2,7 @@
 dependencies: []
 
 galaxy_info:
+  role_name: ros-install
   author: mynameiscosmo
   description: ROS (Robot Operating System) Installation for Debian and Ubuntu..
   company: "HXR, LLC"
